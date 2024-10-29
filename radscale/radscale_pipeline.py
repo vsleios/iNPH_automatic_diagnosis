@@ -226,13 +226,30 @@ for c in cuts:
             y2.append(y[i])
     q2 = np.array(q2); y2 = np.array(y2)
     l2.append( np.mean(q2==y2) )
+
+
+i=0
+while not (l1[i]>0.98 and l1[i+1]<0.98):
+    i += 1
+x_1 = (0.98-l1[i])/(l1[i+1]-l1[i]) + i
+
+i=0
+while not (l2[i]<0.98 and l2[i+1]>0.98):
+    i += 1
+x_2 = (0.98-l2[i])/(l2[i+1]-l2[i]) + i
     
-    
-plt.plot(l1)
-plt.plot(l2)
-plt.axhline(y=0.98, c="black", linewidth=1)
+
+plt.plot(l1, zorder=0)
+plt.plot(l2, zorder=0)
+plt.axhline(y=0.98, c="gray", linewidth=1, linestyle="--")
+plt.scatter(x=[x_1, x_2], y=[0.98, 0.98], c="black", s=10)
+plt.axvline(x=x_1, c="black", linewidth=1, linestyle="--")
+plt.axvline(x=x_2, c="black", linewidth=1, linestyle="--")
+plt.xlabel("model probablity * 100")
+plt.ylabel("Negative/Positive Predictive Value")
 plt.savefig("./age_sex_ca_ei.png")
-plt.show()
+plt.close()
+
     
 c1, c2, c3 = cutoffs(l1, l2, p, 0.98)
 
@@ -375,13 +392,27 @@ for c in cuts:
             y2.append(y[i])
     q2 = np.array(q2); y2 = np.array(y2)
     l2.append( np.mean(q2==y2) )
+
+i=0
+while not (l1[i]>0.98 and l1[i+1]<0.98):
+    i += 1
+x_1 = (0.98-l1[i])/(l1[i+1]-l1[i]) + i
+
+i=0
+while not (l2[i]<0.98 and l2[i+1]>0.98):
+    i += 1
+x_2 = (0.98-l2[i])/(l2[i+1]-l2[i]) + i
     
-    
-plt.plot(l1)
-plt.plot(l2)
-plt.axhline(y=0.98, c="black", linewidth=1)
+plt.plot(l1, zorder=0)
+plt.plot(l2, zorder=0)
+plt.axhline(y=0.98, c="gray", linewidth=1, linestyle="--")
+plt.scatter(x=[x_1, x_2], y=[0.98, 0.98], c="black", s=10)
+plt.axvline(x=x_1, c="black", linewidth=1, linestyle="--")
+plt.axvline(x=x_2, c="black", linewidth=1, linestyle="--")
+plt.xlabel("model probablity * 100")
+plt.ylabel("Negative/Positive Predictive Value")
 plt.savefig("./age_sex_ca_ei_th.png")
-plt.show()
+plt.close()
     
 c1, c2, c3 = cutoffs(l1, l2, p, 0.98)
 
@@ -544,7 +575,7 @@ plt.axvline(x=x_2, c="black", linewidth=1, linestyle="--")
 plt.xlabel("model probablity * 100")
 plt.ylabel("Negative/Positive Predictive Value")
 plt.savefig("./all_rad.png")
-plt.show()
+plt.close()
     
 c1, c2, c3 = cutoffs(l1, l2, p, 0.98)
 
@@ -707,7 +738,7 @@ plt.axvline(x=x_2, c="black", linewidth=1, linestyle="--")
 plt.xlabel("model probablity * 100")
 plt.ylabel("Negative/Positive Predictive Value")
 plt.savefig("./all_rad_without_age_sex.png")
-plt.show()
+plt.close()
     
 c1, c2, c3 = cutoffs(l1, l2, p, 0.98)
 
@@ -852,13 +883,27 @@ for c in cuts:
             y2.append(y[i])
     q2 = np.array(q2); y2 = np.array(y2)
     l2.append( np.mean(q2==y2) )
-    
-    
-plt.plot(l1)
-plt.plot(l2)
-plt.axhline(y=0.98, c="black", linewidth=1)
+
+i=0
+while not (l1[i]>0.98 and l1[i+1]<0.98):
+    i += 1
+x_1 = (0.98-l1[i])/(l1[i+1]-l1[i]) + i
+
+i=0
+while not (l2[i]<0.98 and l2[i+1]>0.98):
+    i += 1
+x_2 = (0.98-l2[i])/(l2[i+1]-l2[i]) + i
+
+plt.plot(l1, zorder=0)
+plt.plot(l2, zorder=0)
+plt.axhline(y=0.98, c="gray", linewidth=1, linestyle="--")
+plt.scatter(x=[x_1, x_2], y=[0.98, 0.98], c="black", s=10)
+plt.axvline(x=x_1, c="black", linewidth=1, linestyle="--")
+plt.axvline(x=x_2, c="black", linewidth=1, linestyle="--")
+plt.xlabel("model probablity * 100")
+plt.ylabel("Negative/Positive Predictive Value")
 plt.savefig("./rad_univariate.png")
-plt.show()
+plt.close() 
     
 c1, c2, c3 = cutoffs(l1, l2, p, 0.98)
 
