@@ -23,7 +23,7 @@ We used a *FeautreTokenizer-Transformer* model, modified for tabular data. We ac
 
 ### Morphological approach:
 
-Rings method: we achieved a substructure predictiveness that we can visualize on the 3D meshes of the structures.
+Rings method: we achieved a sub-structure level predictiveness for iNPH, that we can visualize on the 3D meshes of the structures. Below are a few examples.
 
 <div>
   <img src="./images/rm-caudate.png" alt="caudate" width="300" style="margin-right: 10px;" />
