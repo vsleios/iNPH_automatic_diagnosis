@@ -1,4 +1,4 @@
-# iNPH-automatic-diagnosis
+# iNPH_automatic_diagnosis
 1) Master thesis project (Uppsala University 2024, MSc Data Science).
 2) Scripts for papers to be published.
 
@@ -17,4 +17,10 @@ The aim is twofold:
 ## A few results of our study
 
 ### Volmetric approach :
+![ftt folds](./images/FTTncv.png)
+
+We used a *FeautreTokenizer-Transformer* model, modified for tabular data. We achieved an accuracy of **94.1 %** by applying Nested Cross Validation for hyperparameter tuning on the architecture.
+
+### Morphological approach:
+Rings method :
 
