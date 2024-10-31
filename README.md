@@ -5,4 +5,16 @@
 ## What is iNPH?
 ![healthy vs iNPH](./images/healthy_vs_iNPH.png)
 
-iNPH (idiopathic Normal Pressure Hydrocephalus) is a neurodegenarative disease characterized, mainly, by the dilation of the Ventricles in the brain. The aim of our study 
+iNPH (idiopathic Normal Pressure Hydrocephalus) is a neurodegenerative disease that leads to dementia. iNPH is, mainly, characterized by the dilation of the Ventricles.
+
+## Aim of our project
+
+The aim is twofold:
+
+1) Develop Machine Learning models that predict the probability of a patient having iNPH.
+2) Investigate the patterns on the brain that characterize iNPH.
+
+## A few results of our study
+
+### Volmetric approach :
+
