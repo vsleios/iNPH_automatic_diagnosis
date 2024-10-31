@@ -22,5 +22,7 @@ The aim is twofold:
 We used a *FeautreTokenizer-Transformer* model, modified for tabular data. We achieved an accuracy of **94.1 %** by applying Nested Cross Validation for hyperparameter tuning on the architecture.
 
 ### Morphological approach:
+
 Rings method :
 
+![caudate](./images/.png) ![caudate separation](./images/Screenshot from 2024-10-31 16-04-07.png)
