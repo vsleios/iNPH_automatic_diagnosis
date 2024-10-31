@@ -25,4 +25,22 @@ We used a *FeautreTokenizer-Transformer* model, modified for tabular data. We ac
 
 Rings method :
 
-![caudate](./images/.png) ![caudate separation](./images/Screenshot from 2024-10-31 16-04-07.png)
+<div>
+  <img src="./images/rm-caudate.png" alt="caudate" width="300" style="margin-right: 10px;" />
+  <img src="./images/rm-caudate-separation.png" alt="caudate separation" width="300" />
+</div>
+
+<div>
+  <img src="./images/rm-cerebellum.png" alt="caudate" width="300" style="margin-right: 10px;" />
+  <img src="./images/rm-cerebellum-separation.png" alt="caudate separation" width="300" />
+</div>
+
+<div>
+  <img src="./images/rm-postcentral.png" alt="caudate" width="300" style="margin-right: 10px;" />
+  <img src="./images/rm-postcentral-separation.png" alt="caudate separation" width="300" />
+</div>
+
+<div>
+  <img src="./images/rm-rostral.png" alt="caudate" width="300" style="margin-right: 10px;" />
+  <img src="./images/rm-rostral-separation.png" alt="caudate separation" width="300" />
+</div>
